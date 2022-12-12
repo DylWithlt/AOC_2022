@@ -47,7 +47,7 @@ with open('./Day11/input.txt', 'r') as f:
     def processItem(monkey, item):
         monkey["count"] += 1
 
-        item = monkey["operation"](item) % greatest_divisor
+        item = monkey["operation"](item) % lcm
         #item = int(item/3)
         test = monkey["test"](item)
 
